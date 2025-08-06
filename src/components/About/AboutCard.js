@@ -13,9 +13,11 @@ function AboutCard() {
             <br />
             Atualmente trabalho como desenvolvedor de software fullstack.
             <br />
-            Concluindo em junho/2024 o curso de análise e desenvolvimento de sistemas na UniAmérica Centro Universitário.
+            Conclui em junho/2024 o curso de análise e desenvolvimento de sistemas na UniAmérica Centro Universitário.
             <br />
             <br />
+            Atualmente trabalho na empresa Code21 onde estou responsável por uma projeto de interesse publico, financiado pelo governo do Paraná.<br/>
+            Já estou atuando pela empresa desde Junho/2024, desde então tive uma grande evolução como desenvolvedor.<br />
             Além da codificação, algumas outras atividades que adoro fazer!
           </p>
           <ul>
