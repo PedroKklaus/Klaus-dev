@@ -20,7 +20,7 @@ function Home2() {
               DEIXE  <span className="purple"> APRESENTAR-ME</span>
             </h1>
             <p className="home-about-body">
-            Me apaixonei por programação e pelo menos aprendi alguma coisa, eu acho… 🤷‍♂️
+            Sou desenvolvedor full-stack e gosto de construir produtos web de ponta a ponta, do banco de dados à interface.
               <br/>
               <br /> Sempre fui apaixonado por computadores e jogos online e, com influência dos meus tios, que são programadores,
               iniciei na área 
@@ -28,11 +28,11 @@ function Home2() {
               realizei também cursos de programação, como Lógica de Programação, Python, JavaScript e React. 
               <br/>
               Entrei 100% 
-              na área em outubro de 2022, quando fiz meu primeiro estágio como desenvolvedor e desde então estou focado 100% na 
-              programação. Atualmente tenho trabalhado como 
+              na área em março de 2023, quando fiz meu primeiro estágio como desenvolvedor e desde então estou focado 100% na
+              programação. Atualmente trabalho como
 
               <i>
-                <b className="purple"> desenvolvedor fullstack. </b>
+                <b className="purple"> desenvolvedor full-stack pleno. </b>
               </i>
               <br />   
               <br/>
@@ -45,7 +45,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{ borderRadius: "50%", marginTop: "20px", width: "350px", height: "350px" }}/>
+              <img src={myImg} className="img-fluid" alt="Foto de Pedro Klaus" style={{ borderRadius: "50%", marginTop: "20px", width: "350px", height: "350px" }}/>
             </Tilt>
           </Col>
         </Row>

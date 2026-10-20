@@ -2,9 +2,46 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import git from "../../Assets/Projects/git.png";
-import mgsis from "../../Assets/Projects/mgsis.png";
 import afra from "../../Assets/Projects/afra.png";
+import inutri from "../../Assets/Projects/inutri.png";
+import lumin from "../../Assets/Projects/lumin.png";
+import ana from "../../Assets/Projects/ana.png";
+
+const projects = [
+  {
+    imgPath: inutri,
+    title: "inutri",
+    description:
+      "Plataforma SaaS para nutricionistas e clínicas: prontuário, plano alimentar com a base de alimentos TACO e Open Food Facts, agenda, financeiro com assinaturas (Pix, boleto e cartão) e um app para o paciente acompanhar o plano.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    demoLink: "https://inutri-teste-ten.vercel.app/",
+  },
+  {
+    imgPath: lumin,
+    title: "Lumin Imports",
+    description:
+      "Loja virtual de cosméticos importados, com catálogo filtrável por categoria, marca e destaques, carrinho com finalização do pedido pelo WhatsApp e painel administrativo de produtos.",
+    tags: ["React", "Vite", "Supabase"],
+    demoLink: "https://luminimports.vercel.app/",
+  },
+  {
+    imgPath: ana,
+    title: "Portfólio Ana Schaeffer",
+    description:
+      "Site de portfólio para uma designer de moda e marketing, com seções de serviços, projetos, galeria do Behance e contato.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    ghLink: "https://github.com/PedroKklaus/Portfolio-ANA",
+    demoLink: "https://portfolio-ana-mu.vercel.app/",
+  },
+  {
+    imgPath: afra,
+    title: "CCIAR",
+    description:
+      "Projeto realizado para a Prefeitura de Foz do Iguaçu, mais especificamente para o Centro de Convivência do Idoso Afra Roth. Trata-se de um sistema de cadastro, controle de clientes e atividades.",
+    tags: ["Java", "Spring Boot", "PostgreSQL"],
+    ghLink: "https://github.com/CCIAR-PI/Projeto-Integrador-CCIAR",
+  },
+];
 
 function Projects() {
   return (
@@ -15,40 +52,23 @@ function Projects() {
           Meus <strong className="purple">Trabalhos </strong> recentes
         </h1>
         <p style={{ color: "white" }}>
-        Aqui estão alguns projetos em que trabalhei recentemente.
+          Aqui estão alguns projetos em que trabalhei recentemente. Outros estão no meu{" "}
+          <a
+            href="https://github.com/PedroKklaus?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+            className="purple"
+          >
+            GitHub
+          </a>
+          .
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={mgsis}
-              isBlog={false}
-              title="MGsis"
-              description="Site da empresa MGSIS Tecnologia, uma empresa onde o produto vendido é um sistema ERP. Além do produto, a empresa também oferece um sistema de suporte do sistema e informática."
-              ghLink="https://github.com/PedroKklaus/MGsis"
-              demoLink="https://mgsis.com/testmgsis/MGsis/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={afra}
-              isBlog={false}
-              title="CCIAR"
-              description="Projeto realizado para a Prefeitura de Foz do Iguaçu, mais especificamente para o Centro de Convivência do Idoso Afra Roth. Trata-se de um sistema de cadastro, controle de clientes e atividades."
-              ghLink="https://github.com/CCIAR-PI/Projeto-Integrador-CCIAR"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={git}
-              isBlog={false}
-              title="Github"
-              description="Esses são alguns outros projetos realizados com PHP, Java, Typescript, angular e javascript"
-              ghLink="https://github.com/PedroKklaus?tab=repositories"
-              demoLink="https://github.com/PedroKklaus?tab=repositories"              
-            />
-          </Col>
+          {projects.map((project) => (
+            <Col md={4} className="project-card" key={project.title}>
+              <ProjectCard isBlog={false} {...project} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

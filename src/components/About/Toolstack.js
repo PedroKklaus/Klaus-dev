@@ -5,23 +5,26 @@ import {
   SiPostman,
   SiWindows,
   SiIntellijidea,
+  SiVercel,
 } from "react-icons/si";
+
+const tools = [
+  { icon: <SiWindows />, name: "Windows" },
+  { icon: <SiVisualstudiocode />, name: "VS Code" },
+  { icon: <SiPostman />, name: "Postman" },
+  { icon: <SiIntellijidea />, name: "IntelliJ" },
+  { icon: <SiVercel />, name: "Vercel" },
+];
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiIntellijidea />
-      </Col>
+      {tools.map((tool) => (
+        <Col xs={4} md={2} className="tech-icons" key={tool.name} title={tool.name}>
+          {tool.icon}
+          <div className="tech-icons-label">{tool.name}</div>
+        </Col>
+      ))}
     </Row>
   );
 }

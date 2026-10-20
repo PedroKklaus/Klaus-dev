@@ -27,3 +27,8 @@ yarn-error.log*
 
 Server/node_modules
 Server/config.js
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
