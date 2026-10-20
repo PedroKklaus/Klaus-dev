@@ -8,16 +8,21 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Olá, eu me chamo <span className="purple">Pedro Klaus </span>
-            sou do <span className="purple"> Paraná, Brasil.</span>
+            Olá, eu me chamo <span className="purple">Pedro Klaus</span>, sou
+            de <span className="purple"> Curitiba, Paraná, Brasil.</span>
             <br />
-            Atualmente trabalho como desenvolvedor de software fullstack.
+            Sou desenvolvedor full-stack com mais de 3 anos na área de sistemas e tecnólogo em Análise e
+            Desenvolvimento de Sistemas pela UniAmérica Centro Universitário.
             <br />
-            Conclui em junho/2024 o curso de análise e desenvolvimento de sistemas na UniAmérica Centro Universitário.
+            <br />
+            Hoje sou desenvolvedor full-stack pleno na <span className="purple">Linked Data</span>, onde
+            trabalho de ponta a ponta numa plataforma web de gestão com C#/.NET e React/Next.js: modelagem de
+            dados, regras de negócio, APIs REST e interfaces.
             <br />
             <br />
-            Atualmente trabalho na empresa Code21 onde estou responsável por uma projeto de interesse publico, financiado pelo governo do Paraná.<br/>
-            Já estou atuando pela empresa desde Junho/2024, desde então tive uma grande evolução como desenvolvedor.<br />
+            A vivência em suporte me ajuda a entender o problema do usuário antes de escrever código.
+            <br />
+            <br />
             Além da codificação, algumas outras atividades que adoro fazer!
           </p>
           <ul>
@@ -28,7 +33,7 @@ function AboutCard() {
               <ImPointRight /> Viajar
             </li>
             <li className="about-activity">
-              <ImPointRight /> Realizar atividades fisicas
+              <ImPointRight /> Realizar atividades físicas
             </li>
             <li className="about-activity">
               <ImPointRight /> Estudar
